@@ -1,0 +1,21 @@
+<h1>Organizaciones</h1>
+
+<div class="container-fluid">
+  <div class="row row-cols-auto">
+    <div class="col mt-5" *ngFor="let organizacion of organizaciones">
+      
+      <div class="card" style="width: 18rem;">
+        <img [src]="organizacion.banner" class="card-img-top" [alt]="organizacion.nombre">
+        <div class="card-body">
+          <h5 class="card-title">{{organizacion.nombre}}</h5>
+          <p class="card-subtitle mb-2 text-muted">{{organizacion.direccion.estado}}</p>
+        </div>
+        <div class="card-footer text-muted">
+          Participando desde {{organizacion.direccion.colonia}}
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
