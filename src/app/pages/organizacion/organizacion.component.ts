@@ -17,7 +17,6 @@ export class OrganizacionComponent implements OnInit {
     this.organizacionesService.getOrganizaciones().subscribe({
       next: (organizaciones: OrganizacionModel[]) => {
         this.organizaciones = organizaciones;
-        console.log(organizaciones);
       },
       error: (error: any) => { console.log },
       complete: () => { console.log('Completado') }
