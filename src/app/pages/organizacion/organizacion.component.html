@@ -1,7 +1,7 @@
 <h1>Organizaciones</h1>
 
 <div class="container-fluid">
-  <div class="row row-cols-auto">
+  <div class="row row-cols-auto" *ngIf="organizaciones.length >= 1">
     <div class="col mt-5" *ngFor="let organizacion of organizaciones">
       
       <div class="card" style="width: 18rem;">
@@ -17,4 +17,5 @@
 
     </div>
   </div>
+  <h1>Hola Mundo</h1>
 </div>

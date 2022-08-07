@@ -8,7 +8,7 @@ import { OrganizacionModel } from '../models/organizacionModel';
 })
 export class OrganizacionService {
 
-  private baseUrl = 'http://localhost:8080/api/v1/';
+  private baseUrl = 'http://localhost:88/api/v1/';
 
   constructor(private _http: HttpClient) {
     
